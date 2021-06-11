@@ -1,7 +1,8 @@
 var server=require('ws').Server;
-var PORT=process.env.PORT ||5001;
 const express =require('express');
-var s=new server({port:PORT});
+Process.env.port || 5000
+var s=new server({port:5001});
+var PORT=Process.env.port || 5000;
 const app=express();
 var EventEmitter = require ('events');
 //bắt kết nối
@@ -39,6 +40,4 @@ s.on('connection',function(ws){
 })
 
 //
-app.listen(process.env.PORT,function(){
 
-})
