@@ -38,4 +38,6 @@ s.on('connection',function(ws){
 })
 
 //
-
+app.listen(process.env.PORT,function(){
+  
+})
