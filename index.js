@@ -1,5 +1,7 @@
 var server=require('ws').Server;
+const express =require('express');
 var s=new server({port:5001});
+const app=express();
 var EventEmitter = require ('events');
 //bắt kết nối
 s.on('connection',function(ws){
@@ -34,3 +36,6 @@ s.on('connection',function(ws){
     
 
 })
+
+//
+
