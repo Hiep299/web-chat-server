@@ -1,6 +1,6 @@
 var server=require('ws').Server;
 const express =require('express');
-Process.env.port || 5000
+
 var s=new server({port:5001});
 var PORT=Process.env.port || 5000;
 const app=express();
